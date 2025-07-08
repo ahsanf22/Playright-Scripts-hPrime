@@ -1,13 +1,14 @@
-using Microsoft.Playwright;
+﻿using Microsoft.Playwright;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 using System;
 using Xamarin.Essentials;
 using Microsoft.VisualStudio.TestPlatform.ObjectModel;
+using System.Xml;
 
 
-namespace HPrimeTestProject
+namespace HBH_WBA_Beta
 {
-    public class HBH_CBD
+    public class HBH_WBA_CBD
     {
 
         [Test]
@@ -39,12 +40,10 @@ namespace HPrimeTestProject
             var reqsetup_Assessment = "479"; //CBD
             var reqsetup_Candidate = "401, User";
             var select_Assessor = "402, User";
+            var select_Assessor_EmpNo = "12345"; //Employee Number
             var imp_Candidate = "1980"; //401, User
             var imp_Admin1 = "1282"; //Bob
             var imp_Admin2 = "1286"; //Ajith
-            var ext_Ass_Firstname = "JAMWeb";
-            var ext_Ass_Lastname = "Automation";
-            var ext_Ass_Email = "jamweb.automation@hprime.com.au";
 
             DateTime currentDate = DateTime.Today;
             string formattedDate = currentDate.ToString("dd/MM/yyyy");
@@ -221,7 +220,7 @@ namespace HPrimeTestProject
             await page.GetByPlaceholder("Enter Age").FillAsync("90");
             await page.Locator("input[type=\"text\"]").Nth(2).ClickAsync();
             await page.GetByText("year(s)").ClickAsync();
-            await page.Locator("ng-select").Filter(new() { HasText = "�--Please Select--" }).GetByRole(AriaRole.Textbox).ClickAsync();
+            await page.Locator("ng-select").Filter(new() { HasText = "×--Please Select--" }).GetByRole(AriaRole.Textbox).ClickAsync();
             await page.GetByRole(AriaRole.Option, new() { Name = "Male", Exact = true }).ClickAsync();
             await page.Locator("input[name=\"typename\"]").Nth(1).FillAsync("QA Settings");
             await page.GetByText("Adult Medicine").ClickAsync();
@@ -259,7 +258,7 @@ namespace HPrimeTestProject
 
 
             //Enter Employee Number
-            await page.GetByPlaceholder("Enter Emp No.").FillAsync("12345");
+            await page.GetByPlaceholder("Enter Emp No.").FillAsync("" + select_Assessor_EmpNo );
 
 
             //Submit Form
@@ -287,20 +286,20 @@ namespace HPrimeTestProject
                 State = WaitForSelectorState.Hidden,
                 Timeout = 30000
             });
-            await page.Locator("#ddlUsers").SelectOptionAsync(new[] { "" + imp_Admin1});
+            await page.Locator("#ddlUsers").SelectOptionAsync(new[] { "" + imp_Admin1 });
             Thread.Sleep(1500);
             await page.WaitForLoadStateAsync(LoadState.Load);
             await page.WaitForSelectorAsync("text=Dashboard", new PageWaitForSelectorOptions { Timeout = 25000 });
             Thread.Sleep(1000);
 
-            await page.Locator("#ctl00_cphMain_ucWidgetFormsAndAssessments_rgActionItem_ctl00_ctl02_ctl02_FilterTextBox_TemplateColumn").FillAsync("QA " + formattedDate );
+            await page.Locator("#ctl00_cphMain_ucWidgetFormsAndAssessments_rgActionItem_ctl00_ctl02_ctl02_FilterTextBox_TemplateColumn").FillAsync("QA " + formattedDate);
             await page.Locator("#ctl00_cphMain_ucWidgetFormsAndAssessments_rgActionItem_ctl00_ctl02_ctl02_FilterTextBox_TemplateColumn").PressAsync("Enter");
 
             await page.WaitForSelectorAsync(loaderSelector5, new PageWaitForSelectorOptions
 
             {
-                State = WaitForSelectorState.Hidden,  
-                Timeout = 30000  
+                State = WaitForSelectorState.Hidden,
+                Timeout = 30000
             });
 
             await page.GetByText("QA " + formattedDate).First.ClickAsync();
@@ -422,6 +421,6 @@ namespace HPrimeTestProject
         }
     }
 
-    }
+}
 
 
