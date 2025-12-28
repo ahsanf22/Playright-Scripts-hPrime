@@ -27,8 +27,8 @@ namespace HPrimeTestProject
 
 
 
-            var username = "Jamweb.admin.hbh";
-            var password = "JAMWeb@605";
+            var username = "**********";
+            var password = "**********";
 
             var loaderSelector = "#loading-hprime"; //Normal circle loader
             var loaderSelector2 = "#rlpddlUsers"; //Impersonation users data loader

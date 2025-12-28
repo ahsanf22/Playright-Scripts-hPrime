@@ -35,8 +35,8 @@ namespace SJOG_PGY_Beta
 
 
 
-            var username = "Jamweb.admin.sjog";
-            var password = "ZYX#123@abc";
+            var username = "**********";
+            var password = "**********";
             var reqsetup_Candidate = "AutomationUser, 3001";
             var imp_Candidate = "3656"; //AutomationUser, 3001
             var imp_Assessor = "3670"; //AutomationUser, 3002

@@ -34,8 +34,8 @@ namespace HPrimeTestProject
             await page.GotoAsync("https://hospital-beta.hprime.com.au/Login.aspx?ReturnUrl=%2fGeneral%2fDashboard.aspx");
 
 
-            var username = "Jamweb.admin.hbh"; //HBH-WBA
-            var password = "ZYX#123@abc";
+            var username = "**********";
+            var password = "**********";
             var reqsetup_Assessment = "479"; //CBD
             var reqsetup_Candidate = "401, User";
             var select_Assessor = "402, User";
@@ -221,7 +221,7 @@ namespace HPrimeTestProject
             await page.GetByPlaceholder("Enter Age").FillAsync("90");
             await page.Locator("input[type=\"text\"]").Nth(2).ClickAsync();
             await page.GetByText("year(s)").ClickAsync();
-            await page.Locator("ng-select").Filter(new() { HasText = "×--Please Select--" }).GetByRole(AriaRole.Textbox).ClickAsync();
+            await page.Locator("ng-select").Filter(new() { HasText = "\D7--Please Select--" }).GetByRole(AriaRole.Textbox).ClickAsync();
             await page.GetByRole(AriaRole.Option, new() { Name = "Male", Exact = true }).ClickAsync();
             await page.Locator("input[name=\"typename\"]").Nth(1).FillAsync("QA Settings");
             await page.GetByText("Adult Medicine").ClickAsync();

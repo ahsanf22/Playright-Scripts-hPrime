@@ -31,8 +31,8 @@ namespace HPrimeTestProject
 
 
             //Login HBH-WBA(Beta)
-            var username = "Jamweb.admin.hbh";
-            var password = "JAMWeb@605";
+            var username = "**********";
+            var password = "**********";
 
             DateTime currentDate = DateTime.Today;
             string formattedDate = currentDate.ToString("dd/MM/yyyy");

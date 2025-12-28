@@ -35,8 +35,8 @@ namespace GC_PGY_Prod
 
 
 
-            var username = "Jamweb.admin.gcpgy";
-            var password = "RqXkp3GC!6CGjZUTKv_b";
+            var username = "**********";
+            var password = "**********";
             var reqsetup_Candidate = "JAMWeb, Ahsan";
             var imp_Candidate = "3374"; //JAMWeb, Ahsan
             var imp_MEO = "3200"; //Black, Katina
@@ -224,7 +224,7 @@ namespace GC_PGY_Prod
             //await page.GetByRole(AriaRole.Textbox, new() { Name = "First name" }).FillAsync("" + ext_Ass_Firstname);
             //await page.GetByRole(AriaRole.Textbox, new() { Name = "Last name" }).FillAsync("" + ext_Ass_Lastname);
             //await page.GetByRole(AriaRole.Textbox, new() { Name = "Email" }).FillAsync("" + ext_Ass_Email);
-            //await page.Locator("div").Filter(new() { HasTextRegex = new Regex("^×--Please Select--$") }).Nth(1).ClickAsync();
+            //await page.Locator("div").Filter(new() { HasTextRegex = new Regex("^\D7--Please Select--$") }).Nth(1).ClickAsync();
             //await page.GetByText("Consultant/SMO/VMO").ClickAsync();
             //await page.GetByRole(AriaRole.Button, new() { Name = "Submit" }).ClickAsync();
             //await page.GetByRole(AriaRole.Button, new() { Name = "Ok" }).ClickAsync();

@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HNE_NMW_Beta", "HNE_NMW_Bet
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SJOG_PGY_Beta", "SJOG_PGY_Beta\SJOG_PGY_Beta.csproj", "{AD44426B-F7FE-4E2C-8BC1-7B0806E43E82}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HNE_PGY_Beta", "HNE_PGY_Beta\HNE_PGY_Beta.csproj", "{1D95A3F8-08EF-4539-8AA7-54B7D09BBD49}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +61,10 @@ Global
 		{AD44426B-F7FE-4E2C-8BC1-7B0806E43E82}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD44426B-F7FE-4E2C-8BC1-7B0806E43E82}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD44426B-F7FE-4E2C-8BC1-7B0806E43E82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D95A3F8-08EF-4539-8AA7-54B7D09BBD49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D95A3F8-08EF-4539-8AA7-54B7D09BBD49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D95A3F8-08EF-4539-8AA7-54B7D09BBD49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D95A3F8-08EF-4539-8AA7-54B7D09BBD49}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

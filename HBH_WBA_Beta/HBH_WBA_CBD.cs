@@ -35,8 +35,8 @@ namespace HBH_WBA_Beta
             await page.GotoAsync("https://hospital-beta.hprime.com.au/Login.aspx?ReturnUrl=%2fGeneral%2fDashboard.aspx");
 
 
-            var username = "Jamweb.admin.hbh"; //HBH-WBA
-            var password = "ZYX#123@abc";
+            var username = "**********";
+            var password = "**********";
             var reqsetup_Assessment = "479"; //CBD
             var reqsetup_Candidate = "401, User";
             var select_Assessor = "402, User";

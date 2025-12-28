@@ -93,7 +93,7 @@ namespace HPrimeTestProject
             Users.Add("50001648"); //82
             Users.Add("56160603"); //Alex Joseph 83
 
-            string password = "Newcastle#123";
+            string password = "************;
 
             var launchOptions = new BrowserTypeLaunchOptions
             {

@@ -26,8 +26,8 @@ namespace HPrimeTestProject
             // Login HBH-WBA(Beta)
             await page.ClickAsync("#HBH_LoginDiv");
 
-            var username = "Jamweb";
-            var password = "JAMWeb605";
+            var username = "**********";
+            var password = "**********";
 
             for (int i = 0; i < 30; i++)
             {

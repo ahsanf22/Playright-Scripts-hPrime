@@ -43,8 +43,8 @@ namespace GC_PGY_Beta
 
 
 
-            var username = "Jamweb.admin.gcpgy";
-            var password = "ZYX#123@abc";
+            var username = "**********";
+            var password = "**********";
             var reqsetup_Candidate = "Abdallah, Abdallah";
             var imp_Candidate = "3196"; //Abdallah, Abdallah
             var imp_MEO = "3200"; //Black, Katina
@@ -215,7 +215,7 @@ namespace GC_PGY_Beta
             await page.GetByRole(AriaRole.Textbox, new() { Name = "First name" }).FillAsync("" + ext_Ass_Firstname);
             await page.GetByRole(AriaRole.Textbox, new() { Name = "Last name" }).FillAsync("" + ext_Ass_Lastname);
             await page.GetByRole(AriaRole.Textbox, new() { Name = "Email" }).FillAsync("" + ext_Ass_Email);
-            await page.Locator("div").Filter(new() { HasTextRegex = new Regex("^×--Please Select--$") }).Nth(1).ClickAsync();
+            await page.Locator("div").Filter(new() { HasTextRegex = new Regex("^\D7--Please Select--$") }).Nth(1).ClickAsync();
             await page.GetByText("Advanced Trainee").ClickAsync();
             await page.GetByRole(AriaRole.Button, new() { Name = "Submit" }).ClickAsync();
             Console.WriteLine("External Assessor Details Entered");

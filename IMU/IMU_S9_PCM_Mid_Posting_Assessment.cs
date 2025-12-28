@@ -32,8 +32,8 @@ namespace IMU
 
 
             //Login IMU (Test)
-            var username = "Jamweb.admin.imu";
-            var password = "JAMWeb@605";
+            var username = "**********";
+            var password = "**********";
             var formName = "S9 PCM Mid Posting Assessment";
 
             DateTime currentDate = DateTime.Today;

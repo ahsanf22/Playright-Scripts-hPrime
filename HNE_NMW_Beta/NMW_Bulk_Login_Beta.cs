@@ -50,7 +50,7 @@ namespace HNE_NMW_Beta
             Users.Add("50036125");
             Users.Add("50021055");
 
-            string password = "Newcastle#123";
+            string password = "***********";
 
             var launchOptions = new BrowserTypeLaunchOptions
             {

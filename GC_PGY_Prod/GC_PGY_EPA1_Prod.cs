@@ -29,8 +29,8 @@ namespace GC_PGY_Prod
             await page.GotoAsync("https://hospital.hprime.com.au/Login.aspx?ReturnUrl=%2fGeneral%2fDashboard.aspx");
 
 
-            var username = "Jamweb.admin.gcpgy";
-            var password = "RqXkp3GC!6CGjZUTKv_b";
+            var username = "**********";
+            var password = "**********";
             var reqsetup_Candidate = "JAMWeb, Ahsan";
             var imp_Candidate = "3374"; //JAMWeb, Ahsan
             var imp_MEO = "3200"; //Black, Katina

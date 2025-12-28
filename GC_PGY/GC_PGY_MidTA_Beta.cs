@@ -35,8 +35,8 @@ namespace GC_PGY_Beta
 
 
 
-            var username = "Jamweb.admin.gcpgy";
-            var password = "ZYX#123@abc";
+            var username = "**********";
+            var password = "**********";
             var reqsetup_Candidate = "Abdallah, Abdallah";
             var imp_Candidate = "3196"; //Abdallah, Abdallah
             var imp_MEO = "3200"; //Black, Katina
